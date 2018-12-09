@@ -48,12 +48,7 @@ chart_df = pd.DataFrame(columns=['date','rank', 'song',
                        )
 chart = bb.ChartData('hot-100')
 
-# Search Song
-#track = 'I Like It'
-# song.title
-
-#search song
-
+# Search each Song
 for song in chart:
 
     track_query = spotifyObject.search(song.title,50,0,'track') # search limit 50 to find common track names
